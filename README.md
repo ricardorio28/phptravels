@@ -16,6 +16,7 @@ The automatic tests are developed using:
 The system requirements are:
 
 - Node.js v16.x or higher
+- Google Chrome
 
 ## Setting up the application
 

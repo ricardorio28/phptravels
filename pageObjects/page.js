@@ -40,4 +40,26 @@ module.exports = class Page {
     async topMenuIsPresent() {
         await this.topMenu.checkAllElementsArePresent();
     }
+
+    /**
+     * @method topMenuIsPresent
+     * @description validate if the top menu is present
+     **/
+    async topMenuIsPresent() {
+        await this.topMenu.checkAllElementsArePresent();
+    }
+
+    /**
+     * @method clickBtTopMenuOffers
+     * @description will click on the button "Offers" from top menu
+     **/
+    async clickBtTopMenuOffers() {
+        await this.topMenu.clickBtOffers();
+    }
+
+
+
+
+
+
 }

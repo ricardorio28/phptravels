@@ -54,11 +54,74 @@ module.exports = class TopMenu {
     }
 
     /**
+     * @method clickBtFlights
+     * @description will click on the button "Flights" from top menu
+     **/
+    async clickBtFlights() {
+        await this.elemMenuBtFlights.click();
+    }
+    /**
+     * @method clickBtHotels
+     * @description will click on the button "Hotels" from top menu
+     **/
+    async clickBtHotels() {
+        await this.elemMenuBtHotels.click();
+    }
+    /**
+     * @method clickBtTours
+     * @description will click on the button "Tours" from top menu
+     **/
+    async clickBtTours() {
+        await this.elemMenuBtTours.click();
+    }
+    /**
+     * @method clickBtTransfers
+     * @description will click on the button "Transfers" from top menu
+     **/
+    async clickBtTransfers() {
+        await this.elemMenuBtTransfers.click();
+    }
+    /**
+     * @method clickBtVisa
+     * @description will click on the button "Visa" from top menu
+     **/
+    async clickBtVisa() {
+        await this.elemMenuBtVisa.click();
+    }
+    /**
+     * @method clickBtBlog
+     * @description will click on the button "Blog" from top menu
+     **/
+    async clickBtBlog() {
+        await this.elemMenuBtBlog.click();
+    }
+    /**
      * @method clickBtOffers
      * @description will click on the button "Offers" from top menu
      **/
     async clickBtOffers() {
         await this.elemMenuBtOffers.click();
+    }
+    /**
+     * @method clickBtFAQ
+     * @description will click on the button "FAQ" from top menu
+     **/
+    async clickBtFAQ() {
+        await this.elemMenuBtFAQ.click();
+    }
+    /**
+     * @method clickBtAboutUs
+     * @description will click on the button "About Us" from top menu
+     **/
+    async clickBtAboutUs() {
+        await this.elemMenuBtAboutUs.click();
+    }
+    /**
+     * @method clickBtCompany
+     * @description will click on the button "Company" from top menu
+     **/
+    async clickBtCompany() {
+        await this.elemMenuBtCompany.click();
     }
 
 }
