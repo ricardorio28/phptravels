@@ -41,6 +41,7 @@ class LoginPage extends Page {
      **/
     async checkAllElementsArePresent() {
         await expect(browser).toHaveUrlContaining(this.urlPath);
+        await this.topMenuIsPresent();
         await this.elemInputUsername.waitForDisplayed();
         await this.elemInputPassword.waitForDisplayed();
         await this.elemCheckboxRemember.waitForDisplayed();

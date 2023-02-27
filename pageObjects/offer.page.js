@@ -24,6 +24,7 @@ module.exports = class OfferPage extends Page {
    **/
   async checkAllElementsArePresent(elemTitleText, tableWithListOfValidations) {
     await expect(browser).toHaveUrlContaining(this.urlPath + '/' + elemTitleText.replaceAll(' ', '-').toLowerCase());
+    await this.topMenuIsPresent();
     await this.validateOffer(elemTitleText, tableWithListOfValidations);
   }
 

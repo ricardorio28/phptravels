@@ -1,10 +1,19 @@
 const Page = require('./page');
 const Menu = require('../components/Menu');
 
+
 class AccountPage extends Page {
 
   urlPath = '/account/dashboard';
   menu = new Menu();
+
+  /**
+   * @method open
+   * @description will open the URL in the browser
+   **/
+  async open() {
+    return super.open(this.urlPath);
+  }
 
   /**
    * @method checkAllElementsArePresent
@@ -14,6 +23,7 @@ class AccountPage extends Page {
   async checkAllElementsArePresent() {
     await expect(browser).toHaveUrlContaining(this.urlPath);
     await this.menu.checkAllElementsArePresent();
+    await this.topMenuIsPresent();
     await this.validateDashboardBoxes();
   }
 

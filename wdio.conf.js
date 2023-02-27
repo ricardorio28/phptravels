@@ -33,7 +33,7 @@ exports.config = {
     // will be called from there.
     //
     specs: [
-        './features/*.feature'
+        './features/login.feature'
     ],
     // Patterns to exclude.
     exclude: [

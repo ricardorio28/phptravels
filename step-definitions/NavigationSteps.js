@@ -26,4 +26,9 @@ Then(/^The user navigates to the (\w+) page$/, async (page) => {
     await pages[page].checkAllElementsArePresent();
 });
 
-
+When(/^The user do not have access to the page see messages "([^"]*)" and "([^"]*)"$/, async (message1, message2) => {
+    console.log("message1=" + message1);
+    console.log("message2=" + message2);
+    await AccountPage.searchMessage(message1);
+    await AccountPage.searchMessage(message2);
+});

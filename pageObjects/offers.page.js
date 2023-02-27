@@ -1,6 +1,7 @@
 const Page = require('./page');
 const OfferPage = require('./offer.page');
 
+
 class OffersPage extends Page {
 
   urlPath = '/offers';
@@ -21,6 +22,7 @@ class OffersPage extends Page {
    **/
   async checkAllElementsArePresent() {
     await expect(browser).toHaveUrlContaining(this.urlPath);
+    await this.topMenuIsPresent();
     await expect(await $('h2')).toHaveText('SAFA OFFERS');
   }
 

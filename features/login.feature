@@ -3,6 +3,10 @@ Feature: Login test cases
   Background:
     Given I am opening the website on "login" page
 
+  Scenario: testing URL without login
+    Given I am opening the website on "account" page
+    When The user do not have access to the page see messages "404 Error" and "Page not Found"
+
   Scenario Outline: Negative tests on Login Page
     Given I am on the login page
     When I login with <username> and <password>
